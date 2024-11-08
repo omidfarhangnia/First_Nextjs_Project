@@ -11,10 +11,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <div className="flex box-border justify-between h-[100vh] w-[100vw] flex-col items-center overflow-hidden bg-[#111111] p-[30px] text-[#bbbbbb]">
-          <Navbar />
-          {children}
-          <Footer />
+        <div className="box-border flex h-[100vh] w-[100vw] items-center justify-center overflow-hidden bg-[#111111] p-[30px] text-[#bbbbbb]">
+          <div className="flex h-full w-full max-w-[1250px] select-none flex-col items-center justify-between">
+            <Navbar />
+            {children}
+            <Footer />
+          </div>
         </div>
       </body>
     </html>
