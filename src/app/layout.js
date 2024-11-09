@@ -11,8 +11,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <div className="box-border flex h-[100vh] w-[100vw] items-center justify-center overflow-hidden bg-[#111111] p-[30px] text-[#bbbbbb]">
-          <div className="flex h-full w-full max-w-[1250px] select-none flex-col items-center justify-between">
+        <div className="box-border flex min-h-[100vh] items-center justify-center bg-[#111111] p-[30px] text-[#bbbbbb]">
+          <div className="flex min-h-[92vh] w-full max-w-[1250px] select-none flex-col items-center justify-between">
             <Navbar />
             {children}
             <Footer />
